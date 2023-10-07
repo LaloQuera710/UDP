@@ -5,8 +5,8 @@ import java.net.*;
 
 public class UdpServer {
     public static void main(String args[]) throws Exception {
-// open datagram socket on port 9876
-        DatagramSocket sock = new DatagramSocket(9876);
+// open datagram socket on port 5555
+        DatagramSocket sock = new DatagramSocket(5555);
 // create two packets sharing a common buffer
         byte[] buf = new byte[1000];
         DatagramPacket inPkt = new DatagramPacket(buf, buf.length);
